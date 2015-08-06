@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:dp="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.davidparry.widgets.showcase.ThreadLoadingImageFragment">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/text"
+                android:paddingTop="20dp" android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:text="@string/thread_load_message"/>
+        <com.davidparry.widgets.ThreadLoadingImageView
+                android:id="@+id/item_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/text"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="icon"
+                android:src="@drawable/empty"
+                dp:image_url="http://www.davidparry.com/storage/profilesiloet50.png"
+                />
+    </RelativeLayout>
+</FrameLayout>

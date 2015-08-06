@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">David Widgets Showcase</string>
+
+    <string name="title_thread_loading_single">ThreadLoadingView Single</string>
+    <string name="title_thread_loading_list">ThreadLoadingView List</string>
+    <string name="description_recycler">A Recyler View using the ThreadLoadingImageView Example.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="thread_load_message">A single ThreadLoadingImageView Example.</string>
+
+</resources>
