@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:dp="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.davidparry.widgets.showcase.ThreadLoadingImageFragment">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/text"
+                android:paddingTop="20dp" android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:text="@string/thread_load_message"/>
+        <com.davidparry.widgets.SimonCircle
+                android:id="@+id/Circle"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                dp:sc_sections="4"
+                dp:sc_line_color="@android:color/black"
+                dp:sc_sections_color="#33CC33|#FF0000|#3366FF|#FFFF00"
+                android:padding="0dp"
+                android:background="@android:color/white"
+                />
+    </RelativeLayout>
+</FrameLayout>

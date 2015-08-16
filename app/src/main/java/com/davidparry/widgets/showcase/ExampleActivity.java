@@ -67,6 +67,10 @@ public class ExampleActivity extends ActionBarActivity
                 fragment = RecylerFragment.newInstance();
                 break;
             }
+            case 3: {
+                fragment = SimonCircleFragment.newInstance();
+                break;
+            }
         }
 
         fragmentManager.beginTransaction()
@@ -81,6 +85,9 @@ public class ExampleActivity extends ActionBarActivity
                 break;
             case 2:
                 mTitle = getString(R.string.title_thread_loading_list);
+                break;
+            case 3:
+                mTitle = getString(R.string.title_simon_circle);
                 break;
 
         }
