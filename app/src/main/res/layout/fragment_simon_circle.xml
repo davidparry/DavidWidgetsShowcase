@@ -10,16 +10,23 @@
                 android:layout_height="wrap_content" android:id="@+id/text"
                 android:paddingTop="20dp" android:paddingBottom="5dp"
                 android:paddingLeft="5dp"
-                android:text="@string/thread_load_message"/>
-        <com.davidparry.widgets.SimonCircle
+                android:layout_alignParentTop="true"
+                android:text="@string/simon_load_message"/>
+        <com.davidparry.widgets.SimonAnimation
                 android:id="@+id/Circle"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 dp:sc_sections="4"
                 dp:sc_line_color="@android:color/black"
-                dp:sc_sections_color="#33CC33|#FF0000|#3366FF|#FFFF00"
+                dp:sc_sections_color="#66FF33|#FF3300|#0000FF|#FFFF80"
+                dp:sc_sections_highlight_color="#33CC33|#E62E00|#3366FF|#FFFF00"
                 android:padding="0dp"
                 android:background="@android:color/white"
+                android:layout_below="@+id/text"
+
                 />
+
+        <Button android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/animate"
+                android:layout_below="@+id/Circle" android:text="Animate" android:padding="10dp"/>
     </RelativeLayout>
 </FrameLayout>

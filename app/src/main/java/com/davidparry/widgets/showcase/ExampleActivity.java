@@ -76,6 +76,7 @@ public class ExampleActivity extends ActionBarActivity
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment )
                 .commit();
+
     }
 
     public void onSectionAttached(int number) {
@@ -91,6 +92,8 @@ public class ExampleActivity extends ActionBarActivity
                 break;
 
         }
+
+
     }
 
     public void restoreActionBar() {

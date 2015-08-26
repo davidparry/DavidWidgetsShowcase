@@ -34,11 +34,30 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    signingConfigs {
+        /*debug {
+            storeFile file("example.keystore")
+            storePassword "example"
+            keyAlias "example"
+            keyPassword "example"
+        }*/
+
+        release {
+        }
+    }
+    buildTypes {
+        /*debug {
+            signingConfig signingConfigs.debug
+        }*/
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
 }
 
 repositories{
     flatDir{
-        dirs 'libs'
+        dirs 'libs' //,'/opt/ws/DavidWidgets/lib/build/outputs/aar'
     }
 }
 
